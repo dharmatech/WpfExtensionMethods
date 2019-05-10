@@ -202,6 +202,12 @@ namespace Dharmatech.WpfExtensionMethods
             return hyperlink;
         }
 
+        public static MenuItem AddClick(this MenuItem menu_item, RoutedEventHandler handler)
+        {
+            menu_item.Click += handler;
+
+            return menu_item;
+        }
 
     }
 }
